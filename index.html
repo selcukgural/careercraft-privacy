@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -187,7 +187,7 @@
 
     h1 {
       font-size: clamp(2.5rem, 5vw, 4.5rem);
-      line-height: 0.96;
+      line-height: 1.06;
       letter-spacing: -0.05em;
       margin-bottom: 18px;
       max-width: 12ch;
@@ -854,7 +854,8 @@
     const languageButtons = document.querySelectorAll("[data-lang]");
     const translatableElements = document.querySelectorAll("[data-i18n]");
 
-    let currentLanguage = "tr";
+    const browserLanguage = (navigator.languages && navigator.languages[0]) || navigator.language || "en";
+    let currentLanguage = browserLanguage.toLowerCase().startsWith("tr") ? "tr" : "en";
     let currentSlide = 0;
 
     function renderCards(items, container, iconClass) {
