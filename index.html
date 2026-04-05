@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -61,6 +61,11 @@
         linear-gradient(180deg, #050b14 0%, #08101d 45%, #060d16 100%);
       color: var(--text);
       min-height: 100vh;
+      visibility: hidden;
+    }
+
+    body.ready {
+      visibility: visible;
     }
 
     a {
@@ -540,6 +545,7 @@
   </style>
 </head>
 <body>
+  <noscript><style>body{visibility:visible;}</style></noscript>
   <div class="page-shell">
     <nav class="nav" aria-label="Main navigation">
       <div class="brand">
@@ -550,49 +556,45 @@
         </div>
       </div>
       <div class="nav-links">
-        <a href="#tools" data-i18n="navTools">Araçlar</a>
-        <a href="#features" data-i18n="navFeatures">Özellikler</a>
-        <a href="#stack" data-i18n="navStack">Tech Stack</a>
-        <a href="#pricing" data-i18n="navPricing">Fiyatlandırma</a>
-        <a href="#gallery" data-i18n="navGallery">Galeri</a>
+        <a href="#tools" data-i18n="navTools"></a>
+        <a href="#features" data-i18n="navFeatures"></a>
+        <a href="#stack" data-i18n="navStack"></a>
+        <a href="#pricing" data-i18n="navPricing"></a>
+        <a href="#gallery" data-i18n="navGallery"></a>
       </div>
       <div class="language-switch" aria-label="Language switcher">
-        <button type="button" class="active" data-lang="tr">TR</button>
+        <button type="button" data-lang="tr">TR</button>
         <button type="button" data-lang="en">EN</button>
       </div>
     </nav>
 
     <header class="hero">
       <div>
-        <div class="eyebrow" data-i18n="eyebrow">Android • Flutter • AI Destekli Kariyer Asistanı</div>
-        <h1 data-i18n="heroTitle">Kariyerinin her adımı için akıllı üretim platformu.</h1>
-        <p data-i18n="heroDescription">
-          CareerCraft; CV, ön yazı, LinkedIn biyografisi, mülakat hazırlığı, profesyonel e-posta,
-          maaş müzakeresi, performans değerlendirmesi ve LinkedIn mesajlarını saniyeler içinde
-          üreten modern bir mobil asistandır.
-        </p>
+        <div class="eyebrow" data-i18n="eyebrow"></div>
+        <h1 data-i18n="heroTitle"></h1>
+        <p data-i18n="heroDescription"></p>
         <div class="hero-actions">
-          <a class="button-primary" href="#pricing" data-i18n="heroPrimaryCta">Planları İncele</a>
-          <a class="button-secondary" href="#gallery" data-i18n="heroSecondaryCta">Ekranları Gör</a>
+          <a class="button-primary" href="#pricing" data-i18n="heroPrimaryCta"></a>
+          <a class="button-secondary" href="#gallery" data-i18n="heroSecondaryCta"></a>
         </div>
       </div>
 
       <div class="hero-stats">
         <div class="stat-card">
-          <strong data-i18n="stat1Value">8</strong>
-          <span data-i18n="stat1Label">Tüm kariyer yolculuğunu kapsayan ana araç.</span>
+          <strong data-i18n="stat1Value"></strong>
+          <span data-i18n="stat1Label"></span>
         </div>
         <div class="stat-card">
-          <strong data-i18n="stat2Value">TR + EN</strong>
-          <span data-i18n="stat2Label">Tam yerelleştirme ve dil ayarına göre içerik üretimi.</span>
+          <strong data-i18n="stat2Value"></strong>
+          <span data-i18n="stat2Label"></span>
         </div>
         <div class="stat-card">
-          <strong data-i18n="stat3Value">100/gün</strong>
-          <span data-i18n="stat3Label">Premium kullanıcılar için günlük üretim kapasitesi.</span>
+          <strong data-i18n="stat3Value"></strong>
+          <span data-i18n="stat3Label"></span>
         </div>
         <div class="stat-card">
-          <strong data-i18n="stat4Value">30 sn</strong>
-          <span data-i18n="stat4Label">Her AI isteğinde güvenli zaman aşımı kontrolü.</span>
+          <strong data-i18n="stat4Value"></strong>
+          <span data-i18n="stat4Label"></span>
         </div>
       </div>
     </header>
@@ -601,11 +603,8 @@
       <div class="section-card">
         <div class="section-header">
           <div>
-            <h2 data-i18n="toolsTitle">8 ana araç</h2>
-            <p data-i18n="toolsDescription">
-              CareerCraft, adayların başvurudan mülakata ve iş içi iletişime kadar tüm kariyer akışını
-              tek uygulamada yönetmesini sağlar.
-            </p>
+            <h2 data-i18n="toolsTitle"></h2>
+            <p data-i18n="toolsDescription"></p>
           </div>
         </div>
         <div class="tools-grid" id="toolsGrid"></div>
@@ -616,11 +615,8 @@
       <div class="section-card">
         <div class="section-header">
           <div>
-            <h2 data-i18n="featuresTitle">Öne çıkan özellikler</h2>
-            <p data-i18n="featuresDescription">
-              Yerelleştirme, güvenlik, geçmiş kaydı ve kişiselleştirme gibi kritik deneyimler tek bir
-              modern kullanıcı akışında birleşir.
-            </p>
+            <h2 data-i18n="featuresTitle"></h2>
+            <p data-i18n="featuresDescription"></p>
           </div>
         </div>
         <div class="features-grid" id="featuresGrid"></div>
@@ -631,11 +627,8 @@
       <div class="section-card">
         <div class="section-header">
           <div>
-            <h2 data-i18n="stackTitle">Teknoloji stack'i</h2>
-            <p data-i18n="stackDescription">
-              Flutter tabanlı mobil deneyim; Firebase servisleri, OpenAI ve RevenueCat ile güvenli ve
-              ölçeklenebilir şekilde desteklenir.
-            </p>
+            <h2 data-i18n="stackTitle"></h2>
+            <p data-i18n="stackDescription"></p>
           </div>
         </div>
         <div class="tech-grid" id="techGrid"></div>
@@ -646,11 +639,8 @@
       <div class="section-card">
         <div class="section-header">
           <div>
-            <h2 data-i18n="pricingTitle">Fiyatlandırma</h2>
-            <p data-i18n="pricingDescription">
-              Her plan tüm 8 araca erişim sağlar; Premium katmanlar daha yüksek üretim limiti, tam geçmiş
-              erişimi ve özel talimatlar ekler.
-            </p>
+            <h2 data-i18n="pricingTitle"></h2>
+            <p data-i18n="pricingDescription"></p>
           </div>
         </div>
         <div class="pricing-grid" id="pricingGrid"></div>
@@ -661,21 +651,17 @@
       <div class="section-card">
         <div class="section-header">
           <div>
-            <h2 data-i18n="galleryTitle">Uygulama galerisini keşfet</h2>
-            <p data-i18n="galleryDescription">
-              Ana akış, üretim araçları ve geçmiş ekranları modern bir telefon çerçevesi içinde sergilenir.
-            </p>
+            <h2 data-i18n="galleryTitle"></h2>
+            <p data-i18n="galleryDescription"></p>
           </div>
         </div>
         <div class="gallery-layout">
           <div class="gallery-copy">
-            <div class="eyebrow" data-i18n="galleryEyebrow">Canlı uygulama önizlemesi</div>
-            <h3 id="gallerySlideTitle">Ana Ekran</h3>
-            <p id="gallerySlideDescription">
-              Kullanıcı tüm araçları tek bakışta görür ve günlük üretim akışını hızla başlatır.
-            </p>
+            <div class="eyebrow" data-i18n="galleryEyebrow"></div>
+            <h3 id="gallerySlideTitle"></h3>
+            <p id="gallerySlideDescription"></p>
             <div class="gallery-meta">
-              <div class="gallery-counter" id="galleryCounter">01 / 07</div>
+              <div class="gallery-counter" id="galleryCounter"></div>
               <div class="gallery-controls" aria-label="Gallery controls">
                 <button type="button" id="prevSlide" aria-label="Previous slide">←</button>
                 <button type="button" id="nextSlide" aria-label="Next slide">→</button>
@@ -696,10 +682,7 @@
     </section>
 
     <footer>
-      <div data-i18n="footerText">
-        CareerCraft · Flutter, Firebase, OpenAI ve RevenueCat ile geliştirildi · İletişim:
-        gurallabs@gmail.com
-      </div>
+      <div data-i18n="footerText"></div>
     </footer>
   </div>
 
@@ -964,6 +947,7 @@
     });
 
     applyLanguage(currentLanguage);
+    document.body.classList.add("ready");
   </script>
 </body>
 </html>
